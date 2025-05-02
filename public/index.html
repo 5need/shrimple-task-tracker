@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shrimple Task Tracker</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="icon" href="https://fav.farm/🦐" />
+    <link rel="stylesheet" href="/output.css" />
+  </head>
+  <body class="text-gray-200 bg-gray-800 flex flex-col items-center py-48">
+    <h1 class="text-4xl">A 🦐Shrimple🦐 Task Tracker</h1>
+    <p class="text-2xl">The most cliché web app in the world.</p>
+    <p class="text-lg text-gray-300">Made in pure JS.</p>
+    <p class="text-base text-gray-400">With TailwindCSS too, of course.</p>
+    <p class="text-sm text-gray-500">And Docker.</p>
+    <p class="text-xs text-gray-600">...Whatever man :-)</p>
+    <p class="mt-4">
+      <a
+        class="text-blue-400"
+        href="https://github.com/5need/shrimple-task-tracker.git"
+        >Github</a
+      >
+      |
+      <a class="text-blue-400" href="https://404notboring.com"
+        >404notboring.com</a
+      >
+    </p>
+    <form id="addTaskForm" class="w-full max-w-xs border flex mt-12">
+      <input placeholder="Type your task here..." class="w-full p-2 border-r" />
+      <button class="shrink-0 p-2">Add Task</button>
+    </form>
+    <ul
+      id="listOfTasks"
+      class="w-full max-w-xs border border-t-0 empty:hidden flex flex-col"
+    ></ul>
+    <script src="script.js"></script>
+  </body>
+</html>
