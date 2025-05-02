@@ -1,6 +1,10 @@
 const listOfTasks = document.querySelector("#listOfTasks");
 const addTaskForm = document.querySelector("#addTaskForm");
-const tasks = JSON.parse(window.localStorage.getItem("tasks")) || [];
+const tasks = JSON.parse(window.localStorage.getItem("tasks")) || [
+  { done: false, description: "Click me to mark as done!" },
+  { done: true, description: "I'm done!" },
+  { done: false, description: "Click the trash to delete me!" },
+];
 
 function addNewTask(e) {
   e.preventDefault();
